@@ -1,0 +1,17 @@
+<h2>Estos son los ediles de nuestra Junta administradora local</h2>
+<hr class="mb-5">
+
+<div class="row card-group">
+    <div class="col-4" *ngFor="let edil of ediles">
+        <div class="card m-3">
+            <img [src]="edil.imagen" class="card-img-top" [alt]="edil.nombre">
+            <div class="card-body text-center">
+                <h5 class="card-text">{{edil.nombre}}</h5>
+                <h5 class="card-text">Representante NODO {{edil.nodo}}</h5>
+                <h5 class="card-text">Contacto: {{edil.contacto}}</h5>
+                <h5 class="blockquote-footer">Cortesia del Canal Zona 6</h5>
+            </div>
+        </div>
+
+    </div>
+</div>
